@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "name": "sizzle-estoque-frontend",
-  "public": true,
+  "name": "sizzle-estoque-front",
   "builds": [
     {
       "src": "landingpage/frontend/index.html",
@@ -9,6 +8,30 @@
     }
   ],
   "routes": [
+    {
+      "src": "/",
+      "dest": "landingpage/frontend/index.html"
+    },
+    {
+      "src": "/login.html",
+      "dest": "landingpage/frontend/login.html"
+    },
+    {
+      "src": "/register.html",
+      "dest": "landingpage/frontend/register.html"
+    },
+    {
+      "src": "/pagamento.html",
+      "dest": "landingpage/frontend/pagamento.html"
+    },
+    {
+      "src": "/cadastro.html",
+      "dest": "landingpage/frontend/cadastro.html"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "landingpage/assets/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "landingpage/frontend/$1"
