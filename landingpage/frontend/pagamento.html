@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento | Sizzle Estoque</title>
+  <link rel="stylesheet" href="pag.css">
+</head>
+<body>
+
+  <section class="pagamento">
+    <div class="container">
+
+      <h2>Resumo do Plano</h2>
+      <p class="descricao-plano" id="descricao-plano">
+        <!-- Esse conteúdo será atualizado via JavaScript -->
+      </p>
+      
+      <ul class="beneficios">
+        <li>✔️ aCadastro de produtos ilimitado</li>
+        <li>✔️ Acesso para até 3 usuários simultâneos</li>
+        <li>✔️ Relatórios completos e avançados</li>
+        <li>✔️ Integração com planilhas e exportação de dados</li>
+        <li>✔️ Backup automático semanal</li>
+        <li>✔️ Suporte técnico por e-mail e chat</li>
+      </ul>
+
+      <p class="seguranca">
+        O pagamento é 100% seguro e realizado através da plataforma Mercado Pago. Após a confirmação, você receberá o acesso imediato ao sistema.
+      </p>
+
+      <div class="btn-container">
+        <button class="btn-pagar">Ir para o pagamento seguro</button>
+        <p class="voltar"><a href="index.html">← Voltar para o site</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const plano = params.get("plano");
+  
+    const infoPlanos = {
+      gratuito: {
+        nome: "Gratuito",
+        preco: "R$ 0,00/mês",
+        descricao: "ideal para quem está começando e quer experimentar o sistema.",
+      },
+      profissional: {
+        nome: "Profissional",
+        preco: "R$ 39,90/mês",
+        descricao: "perfeito para negócios que precisam de mais funcionalidades e automação.",
+      },
+      empresarial: {
+        nome: "Empresarial",
+        preco: "R$ 99,90/mês",
+        descricao: "pensado para empresas com grandes volumes e necessidades avançadas.",
+      }
+    };
+  
+    const planoSelecionado = infoPlanos[plano] || infoPlanos["profissional"]; // fallback
+  
+    document.getElementById("descricao-plano").innerHTML = `
+      Você está prestes a assinar o plano <strong>${planoSelecionado.nome}</strong> do <strong>Sizzle Estoque</strong>.
+      Por apenas <strong>${planoSelecionado.preco}</strong>, você terá acesso a:
+      <br><em>${planoSelecionado.descricao}</em>
+    `;
+  </script>
+  
+
+</body>
+</html>

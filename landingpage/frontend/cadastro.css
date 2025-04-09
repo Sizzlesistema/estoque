@@ -1,0 +1,94 @@
+/* Reset e estrutura base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff4ec;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .register h2 {
+    font-size: 2rem;
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #e55700;
+  }
+  
+  .link-login {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .link-login a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .link-login a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,472 @@
+/* Reset e estrutura base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fdfdfd;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffffff;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .logo img {
+    max-height: 120px;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff6600;
+  }
+  
+  .btn-header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: 2rem;
+    transition: background 0.3s;
+  }
+  
+  .btn-header:hover {
+    background-color: #e55700;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #fff4ec;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .hero-text .tagline {
+    color: #ff6600;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .hero-text h2 span {
+    color: #ff6600;
+  }
+  
+  .hero-text .sub {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #e55700;
+  }
+  
+  .btn-outline {
+    border: 2px solid #ff6600;
+    color: #ff6600;
+    background: none;
+  }
+  
+  .btn-outline:hover {
+    background-color: #fff1e6;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Funcionalidades Section */
+  .funcionalidades {
+    padding: 5rem 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .funcionalidades h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .card {
+    background: #fff4ec;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    color: #ff6600;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Planos Section */
+  .planos {
+    padding: 5rem 0;
+    background-color: #fff4ec;
+    text-align: center;
+  }
+  
+  .planos h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .plano-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .plano {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plano:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plano h3 {
+    font-size: 1.6rem;
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plano .preco {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #222;
+  }
+  
+  .plano ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    text-align: left;
+    color: #555;
+  }
+  
+  .plano ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .plano .btn {
+    margin-top: auto;
+    margin-top: 1.5rem;
+  }
+  
+  /* Contato Section */
+  .contato {
+    padding: 5rem 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .contato h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .contato p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .form-contato .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-contato .btn:hover {
+    background-color: #e55700;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .hero-text {
+      text-align: center;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn-header {
+      margin-left: 0;
+    }
+  
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-text .sub {
+      font-size: 1rem;
+    }
+  
+    .logo img {
+      max-height: 80px;
+    }
+  
+    .form-contato {
+      padding: 0 1rem;
+    }
+  }
+  
+  /* Modal - plano */
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #333;
+  }
+  
+  .modal .sub {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+  
+  .modal input:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+  }
+  
+  .modal .btn {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .modal .btn:hover {
+    background-color: #e05500;
+  }
+  
+  /* Botão fechar */
+  .close-modal {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .close-modal:hover {
+    color: #ff6600;
+  }
+  
+  /* Animação */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  

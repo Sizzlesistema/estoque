@@ -1,0 +1,123 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Título */
+  .pagamento h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+    text-align: center;
+  }
+  
+  /* Descrição do plano */
+  .descricao-plano {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Lista de benefícios */
+  .beneficios {
+    list-style: none;
+    margin: 20px 0;
+    padding-left: 0;
+  }
+  
+  .beneficios li {
+    background-color: #f2f2f2;
+    border-left: 4px solid #ff6600;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+  
+  /* Segurança */
+  .seguranca {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Botão de pagamento */
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .btn-pagar {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-pagar:hover {
+    background-color: #e95c00;
+  }
+  
+  .voltar {
+    margin-top: 15px;
+  }
+  
+  .voltar a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .voltar a:hover {
+    color: #ff6600;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .container {
+      margin: 30px 15px;
+      padding: 20px;
+    }
+  
+    .pagamento h2 {
+      font-size: 1.6rem;
+    }
+  
+    .descricao-plano,
+    .beneficios li,
+    .seguranca {
+      font-size: 0.95rem;
+    }
+  
+    .btn-pagar {
+      width: 100%;
+    }
+  }
+  

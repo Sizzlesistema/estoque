@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sizzle Estoque</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="/landingpage/assets/logo.png" alt="Logo Sizzle Estoque">
+      </a>          
+      <nav>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+        <a href="login.html" class="btn-header">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="tagline">Controle de estoque</p>
+        <h2>Gerencie seu estoque com um <span>sistema simples</span> e <span>eficiente</span></h2>
+        <p class="sub">Economize tempo, evite perdas e organize seu negócio com o Sizzle Estoque.</p>
+        <div class="hero-buttons">
+          <a href="#planos" class="btn hero-btn">Comece agora</a>
+          <a href="#planos" class="btn hero-btn">Ver planos</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="/landingpage/assets/estoque.png" alt="Mockup Sizzle Estoque">
+      </div>
+    </div>
+  </section>
+
+  <section class="funcionalidades" id="funcionalidades">
+    <div class="container">
+      <h2>Funcionalidades do <span style="color: #ff6600;">Sizzle Estoque</span></h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Controle de Produtos</h3>
+          <p>Adicione, edite e remova produtos com facilidade, mantendo seu estoque sempre atualizado.</p>
+        </div>
+        <div class="card">
+          <h3>Relatórios Inteligentes</h3>
+          <p>Visualize gráficos e relatórios completos sobre entradas, saídas e desempenho de vendas.</p>
+        </div>
+        <div class="card">
+          <h3>Alertas de Baixo Estoque</h3>
+          <p>Receba notificações quando os níveis de estoque estiverem baixos e evite perdas.</p>
+        </div>
+        <div class="card">
+          <h3>Gestão de Fornecedores</h3>
+          <p>Cadastre e acompanhe todos os fornecedores com histórico de compras e contatos.</p>
+        </div>
+        <div class="card">
+          <h3>Controle por Categorias</h3>
+          <p>Organize os produtos por categorias para facilitar o gerenciamento e análise.</p>
+        </div>
+        <div class="card">
+          <h3>Importação de Dados</h3>
+          <p>Importe dados do Excel ou CSV de forma simples e rápida para iniciar seu controle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="planos" id="planos">
+    <div class="container">
+      <h2>Nossos Planos</h2>
+      <div class="plano-cards">
+
+        <div class="plano">
+          <h3>Gratuito</h3>
+          <p class="preco">R$ 0,00/mês</p>
+          <ul>
+            <li>Cadastro de até 50 produtos</li>
+            <li>1 usuário</li>
+            <li>Relatórios básicos</li>
+            <li>Suporte por e-mail</li>
+          </ul>
+          <a href="pagamento.html?plano=gratuito" class="btn">Começar agora</a>
+        </div>
+
+        <div class="plano">
+          <h3>Profissional</h3>
+          <p class="preco">R$ 39,90/mês</p>
+          <ul>
+            <li>Produtos ilimitados</li>
+            <li>Até 3 usuários</li>
+            <li>Relatórios avançados</li>
+            <li>Integração com planilhas</li>
+          </ul>
+          <a href="pagamento.html?plano=profissional" class="btn">Assinar plano</a>
+        </div>
+
+        <div class="plano">
+          <h3>Empresarial</h3>
+          <p class="preco">R$ 99,90/mês</p>
+          <ul>
+            <li>Tudo do plano Profissional</li>
+            <li>Usuários ilimitados</li>
+            <li>Suporte prioritário</li>
+            <li>Consultoria personalizada</li>
+          </ul>
+          <a href="pagamento.html?plano=empresarial" class="btn">Contratar agora</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Tem dúvidas, sugestões ou quer saber mais? Fale com a gente!</p>
+      <form action="#" method="post" class="form-contato">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modalRegistro" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+    <div style="background:#fff; padding:20px; border-radius:8px; max-width:400px; width:100%; position:relative;">
+      <span id="fecharModal" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+      <h2>Crie sua conta</h2>
+      <p>Estamos quase lá! Crie sua conta para continuar com a assinatura do plano escolhido.</p>
+      <form id="formRegistro">
+        <input type="text" name="nome" placeholder="Nome completo" required style="width:100%; padding:10px; margin:8px 0;" />
+        <input type="email" name="email" placeholder="E-mail" required style="width:100%; padding:10px; margin:8px 0;" />
+        <input type="password" name="senha" placeholder="Senha" required style="width:100%; padding:10px; margin:8px 0;" />
+        <button type="submit" style="width:100%; padding:10px; background:#ff6600; color:white; border:none; cursor:pointer;">Continuar para o pagamento</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const botaoAssinar = document.querySelectorAll('.plano .btn');
+    const modal = document.getElementById('modalRegistro');
+    const fechar = document.getElementById('fecharModal');
+    let planoSelecionado = "";
+  
+    // Abrir modal e capturar plano
+    botaoAssinar.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const url = new URL(btn.href);
+        const plano = url.searchParams.get("plano");
+        planoSelecionado = plano;
+        modal.style.display = 'flex';
+      });
+    });
+  
+    // Fechar modal
+    fechar.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+  
+    // Fechar clicando fora do modal
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  
+    // Envio do formulário para o backend
+    document.getElementById('formRegistro').addEventListener('submit', async function (e) {
+      e.preventDefault();
+  
+      const nome = this.nome.value;
+      const email = this.email.value;
+      const senha = this.senha.value;
+  
+      // 🔐 Aqui você pode usar a senha para cadastro no sistema, se quiser
+  
+      try {
+        const response = await fetch('http://localhost:3000/api/assinaturas/criar', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+  .then(res => res.json())
+  .then(data => {
+    console.log('🟢 Resposta:', data);
+    // redirecionar para checkout do mercado pago
+    window.location.href = `https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=${data.id}`;
+  })
+  .catch(err => {
+    console.error('🔴 Erro na requisição:', err);
+  });
+  
+        } catch (error) {
+          console.error('🔴 Erro:', error);
+        }
+      });
+    
+      // Fechar modal ao clicar fora dele
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+  </script>
+  
+</body>
+</html>
