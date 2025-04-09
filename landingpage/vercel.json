@@ -1,8 +1,17 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/login", "destination": "/login.html" },
-    { "source": "/register", "destination": "/register.html" },
-    { "source": "/pagamento", "destination": "/pagamento.html" }
+  "version": 2,
+  "name": "sizzle-estoque-frontend",
+  "public": true,
+  "builds": [
+    {
+      "src": "landingpage/frontend/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "landingpage/frontend/$1"
+    }
   ]
 }
