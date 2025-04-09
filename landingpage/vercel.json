@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "sizzle-estoque-front",
+  "name": "sizzle-estoque-frontend",
   "builds": [
     {
       "src": "landingpage/frontend/index.html",
@@ -8,33 +8,15 @@
     }
   ],
   "routes": [
-    {
-      "src": "/",
-      "dest": "landingpage/frontend/index.html"
-    },
-    {
-      "src": "/login.html",
-      "dest": "landingpage/frontend/login.html"
-    },
-    {
-      "src": "/register.html",
-      "dest": "landingpage/frontend/register.html"
-    },
-    {
-      "src": "/pagamento.html",
-      "dest": "landingpage/frontend/pagamento.html"
-    },
-    {
-      "src": "/cadastro.html",
-      "dest": "landingpage/frontend/cadastro.html"
-    },
+    { "src": "/", "dest": "landingpage/frontend/index.html" },
+    { "src": "/login.html", "dest": "landingpage/frontend/login.html" },
+    { "src": "/cadastro.html", "dest": "landingpage/frontend/cadastro.html" },
+    { "src": "/pagamento.html", "dest": "landingpage/frontend/pagamento.html" },
+    { "src": "/style.css", "dest": "landingpage/frontend/style.css" },
+    { "src": "/script.js", "dest": "landingpage/frontend/script.js" },
     {
       "src": "/assets/(.*)",
       "dest": "landingpage/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "landingpage/frontend/$1"
     }
   ]
 }
